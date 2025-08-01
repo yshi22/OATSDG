@@ -1,0 +1,24 @@
+defaults:
+  - defaults.yaml
+  - _self_
+
+dataset: REFIT
+lr: 1e-3
+lr_decay: 0.1
+weight_decay: 3e-3
+appliance: ???
+batch_size: 1024
+n_epoch: 80
+seq_len: 89
+pred_len: 1
+z_dim: 192
+n_domains: 7
+data_dir: ???
+metric_list: [mae, mse]
+unnorm: True
+w_pred: 1.
+w_oa: .1
+w_dd: .05
+w_mi: .05
+min_diff: 20
+freeze_epoch: 20

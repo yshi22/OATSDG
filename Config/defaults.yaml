@@ -1,0 +1,21 @@
+defaults:
+  - _self_
+  - override hydra/job_logging: disabled
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+
+device: 'cuda'
+test_every: 1
+tsne: False
+zyzd_temperature: .07
+zy_temperature: 2.
+label_diff: l1
+zy_sim: l2
+zyzd_sim: csm
+use_batch_norm: False
+unnorm: False
+min_diff: 0
+freeze_epoch: null

@@ -1,0 +1,19 @@
+defaults:
+  - defaults.yaml
+  - _self_
+
+dataset: Biovid
+batch_size: 1024
+n_epoch: 60
+z_dim: 96
+n_domains: 87
+data_dir: ???
+lr: 5e-3
+lr_decay: 0.1
+weight_decay: 5e-4
+metric_list: ['mae', 'mse']
+use_batch_norm: True
+w_pred: 1.
+w_oa: .1
+w_dd: .1
+w_mi: .1

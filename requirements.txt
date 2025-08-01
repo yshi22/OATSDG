@@ -1,0 +1,8 @@
+numpy
+pandas
+tqdm
+hydra-core
+scikit-learn
+scipy
+matplotlib
+torch
